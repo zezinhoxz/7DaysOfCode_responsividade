@@ -1,0 +1,33 @@
+@media screen and (min-width: 760px) {
+    .cabecalho__imagem-medico{
+        width: 96px;
+    }
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+.cabecalho__informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.cabecalho__imagem-medico{
+    width: 57px;
+    border-radius: 100%;
+}
+
+.cabecalho__titulo{
+    font-size: 22px;
+    font-weight: var(--bold);
+}
+
+.cabecalho__texto{
+    color: var(--cor-fonte-secundaria);
+}

@@ -1,0 +1,217 @@
+@media screen and (min-width: 760px) {
+    /* header */
+    .cabecalho__informacoes{
+        gap: 1em;
+    }
+
+    /* container */
+    .container__consultas{
+        display: grid;
+        grid-template-columns: 50% 50%
+    }
+
+    .container__bloco-consultas{
+        margin: 1em;
+    }
+
+    .botao-flutuante{
+        display: none;
+    }
+
+    .formulario{
+        display: block;
+        margin: 2em 0;
+    }
+
+    .form__texto{
+        font-size: 18px;
+    }
+
+    .form__pacientes{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .form__item{
+        padding: 1em;
+    }
+
+    .form__item select option{
+        max-width: fit-content;
+    }
+
+    .form__item select{
+        border-radius: 8px;
+        background-color: var(--branco);
+        outline: none;
+        width: 96.5%;
+    }
+
+    select:focus {
+        border: 1px solid #66afe9;
+    }
+
+    .entrada{
+        color: var(--cor-fonte-secundaria);
+        font-size: 14px;
+        margin: 1em 0;
+        padding: 1em;
+        width: 90%;
+        background-color: var(--branco);
+        border: 1px solid var(--borda-form);
+        border-radius: 8px;
+    }
+
+    .botao-salvar-form{
+        max-width: fit-content;
+        padding: 1em 4em;    
+        align-self: center;
+        justify-self: center;
+        background-color: var(--botao-azul);
+        color: var(--branco);
+        border: none;
+        border-radius: 8px;
+        font-weight: var(--medium);
+        font-family: var(--fonte-principal);
+        font-size: 14px;
+    }
+
+    /* rodape */
+    .rodape__lista-items{
+        justify-content: center;
+    }
+
+    .rodape__lista-items .item{
+        padding: .3em 1em;
+    }
+
+    .formulario{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1260px) {
+
+    body{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+
+    /* header */
+    .cabecalho{
+        margin: 2em;
+    }
+
+    .cabecalho__imagem-medico{
+        width: 96px;
+    }
+
+    .cabecalho__titulo{
+        font-size: 32px;
+    }
+
+    .cabecalho__texto{
+        font-size: 18px;
+    }
+
+    /* main */
+    .container{
+        margin: 0 2em;
+    }
+    .container__consultas{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .container__dia-consulta{
+        margin: 1em 0;
+    }
+    .container__bloco-consultas{
+        margin: .5em;
+    }
+    .container__bloco-consultas__imagem-paciente{
+        width: 48px;  
+    }
+
+    .consulta_remota button {
+        padding: 1em;
+    }
+
+    .botao__endereco:hover {
+        background-color: transparent;
+        border: 1px solid var(--botao-azul);
+        color: var(--botao-azul);
+        transition: .5s;
+    }
+
+    .botao__video:hover{
+        background-color: transparent;
+        border: 1px solid var(--botao-laranja);
+        color: var(--botao-laranja);
+        transition: .5s;
+    }
+
+    .botao__audio:hover{
+        background-color: var(--botao-azul);
+        
+        color: var(--branco);
+        transition: .5s;
+    }
+
+    .form__pacientes{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    /* footer */
+    .rodape{
+        width: 35vh;
+        box-shadow: none;
+        border-right: 2px solid var(--cor-fonte-secundaria);
+        border-radius: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    .rodape_div{
+        background-color: var(--branco);
+        position: fixed;
+        /* left: 0; */
+        top: 0;
+        height: 100vh;
+        width: 30vh;
+        border-radius: 0;
+    }
+
+    .rodape__lista-items{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        padding: 2em 0;
+    }
+
+    .rodape__lista-items .item{
+        padding: 1em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: var(--medium);
+    }
+
+    .item a{
+        display: flex;
+        gap: 2em;
+    }
+
+    .item img{
+        width: 18px;
+        height: 18px;
+    }
+
+    
+    header, main{
+        margin: 0 35vh 0 0;
+    }
+}

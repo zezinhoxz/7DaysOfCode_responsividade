@@ -1,0 +1,45 @@
+@import url(css/reset.css);
+@import url(css/cabecalho.css);
+@import url(css/container.css);
+@import url(css/rodape.css);
+@import url(css/media.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* fontes */
+    --fonte-principal: "Montserrat", sans-serif;
+    --normal: 400;
+    --medium: 500;
+    --bold: 700;
+
+    /* cores */
+    --cinza-fundo: #F9F7FE;
+    --cor-fonte-principal: #464646;
+    --cor-fonte-secundaria: #A3A3A3;
+
+    --botao-azul: #4894FF;
+    --botao-laranja: #FFB050;
+    --borda-cinza: #ECECEC;
+    --placeholder: #ADADAD;
+    --borda-form: #CFCFCF;
+
+    --branco: #FFF;
+    --preto: #000;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    font-weight: var(--normal);
+    font-size: 14px;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cinza-fundo);
+}
+
+button{
+    cursor: pointer;
+}
+
+.conteudo{
+    width: 100%;
+}
+
